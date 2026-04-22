@@ -1,0 +1,15 @@
+.card {
+            width: 90%;
+            max-width: 300px;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card :hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(224, 7, 116, 0.4);
+        }
+    .card2 .hover{
+          color: ;
+    }
