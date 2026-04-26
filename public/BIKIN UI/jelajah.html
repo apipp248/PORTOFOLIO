@@ -1,87 +1,138 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="footer.css">
 
-    <title>Hello, world!</title>
+    <title>Rute KA Beroperasi</title>
+    
+    <style>
+      /* Background Body */
+      body {
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* Pengaturan Carousel agar Tinggi Gambar Bagus di Semua Layar */
+      .carousel-item img {
+        height: 840px; /* Tinggi di Laptop */
+        object-fit: cover;
+      }
+
+      /* Pengaturan Tombol Jelajah Custom */
+      .button1 {
+        width: 150px; 
+        height: 70px; 
+        font-size: 24px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        color: rgb(0, 0, 0); 
+        background-color: red; 
+        border-radius: 30px;
+        border: none;
+        transition: 0.3s;
+      }
+
+      .button1:hover {
+        background-color: darkred;
+        color: white;
+      }
+
+      /* Responsif Khusus HP */
+      @media (max-width: 768px) {
+        .carousel-item img {
+          height: 400px; /* Tinggi dikurangi di HP agar proporsional */
+        }
+        
+        .button1 {
+          width: 120px;
+          height: 50px;
+          font-size: 18px; /* Tombol mengecil sedikit di HP */
+        }
+
+        .carousel-caption h3 {
+          font-size: 1.2rem; /* Ukuran teks judul mengecil di HP */
+        }
+      }
+
+      /* Perbaikan Footer agar rapi di HP */
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    </style>
   </head>
-  <body style="background-image: url(); background-size: cover;">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-image: linear-gradient(90deg,red,white);">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-image: linear-gradient(90deg,red,white);">
         <div class="container">
-          <img src="image/logo_kai-removebg-preview.png"width="70px" height="70px" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="image/logo_kai-removebg-preview.png" width="70px" height="70px" alt="Logo KAI">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active active" aria-current="page" href="bikin ui.html ">Home</a>
-              <a class="nav-link " href="jelajah.html">Explore</a>
-              <a class="nav-link " href="order.html" tabindex="-1" aria-disabled="true">About</a>
-              <a class="nav-link " href="#">Contact us</a>
+            <div class="navbar-nav ms-auto text-center">
+              <a class="nav-link active" href="bikin ui.html">Home</a>
+              <a class="nav-link" href="jelajah.html">Explore</a>
+              <a class="nav-link" href="order.html">About</a>
+              <a class="nav-link" href="#">Contact us</a>
             </div>
           </div>
         </div>
       </nav>
 
       <section>
-        <div class="row fw-bold text-center fs-3">
-          <div class="col-12">RUTE KA BEROPERASI</div>
-      </div>
-        <div id="carouselExampleCaptions" class="carousel slide" style="padding top 50px">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-             
+        <div class="container-fluid px-0">
+            <div class="row fw-bold text-center fs-3 my-3 mx-0">
+                <div class="col-12">RUTE KA BEROPERASI</div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="image/uwapik train rel.webp" height="840px" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3 style="color: black;">MAU LEBIH JELAS</h3>
-                  <a href=https://www.arcgis.com/apps/View/index.html?appid=27b7119dc6754d3e9e584a4fa71e5744><button class="button1" style="width: 150px; height: 70px; font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(0, 0, 0); background-color: red; border-radius: 30px;">JELAJAH</button></a>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="image/rel 2 uwapik.webp" height="840px" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3 style="color: black;">MAU LEBIH JELAS</h3>
-                  <a href="https://www.arcgis.com/apps/View/index.html?appid=27b7119dc6754d3e9e584a4fa71e5744"><button class="button1" style="width: 150px; height: 70px; font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(0, 0, 0); background-color: red; border-radius: 30px;">JELAJAH</button></a>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/uwapik train rel.webp" class="d-block w-100" alt="Rute 1">
+                    <div class="carousel-caption d-block">
+                      <h3 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">MAU LEBIH JELAS</h3>
+                      <a href="https://www.arcgis.com/apps/View/index.html?appid=27b7119dc6754d3e9e584a4fa71e5744">
+                        <button class="button1">JELAJAH</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/rel 2 uwapik.webp" class="d-block w-100" alt="Rute 2">
+                    <div class="carousel-caption d-block">
+                      <h3 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">MAU LEBIH JELAS</h3>
+                      <a href="https://www.arcgis.com/apps/View/index.html?appid=27b7119dc6754d3e9e584a4fa71e5744">
+                        <button class="button1">JELAJAH</button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </div>
     </section>   
-    <div class="footer">
-      <p>Copyright</p> <a href="https://www.instagram.com/m_afdl4/"><i class="bi bi-instagram"></i></a> <a href="https://www.tiktok.com/@apip2468?lang=en"><i class="bi bi-tiktok"></i><p>Muhammad Afif Fadhilah</a></p>
+
+    <div class="footer mt-5">
+      <p class="mb-1">Copyright &copy; 2026</p> 
+      <div class="fs-4">
+          <a href="https://www.instagram.com/m_afdl4/" class="text-dark me-2"><i class="bi bi-instagram"></i></a> 
+          <a href="https://www.tiktok.com/@apip2468?lang=en" class="text-dark"><i class="bi bi-tiktok"></i></a>
+      </div>
+      <p class="mt-2">Muhammad Afif Fadhilah</p>
     </div>
-    
-    
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
