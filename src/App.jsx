@@ -93,7 +93,7 @@ function App() {
                 I'M PPLG STUDENT, and I develop 2D games, web applications, and creative visual content.
               </p>
               <button 
-                onClick={() => setHalaman('about')} 
+                onClick={() => window.location.href ='BIKIN UI/bikin ui.html'} 
                 className="btn btn-lg mx-auto mx-md-0" 
                 style={{ backgroundColor: '#ccff00', color: '#012626', fontWeight: 'bold', width: 'fit-content', marginTop: '30px', borderRadius: '8px' }}
               >
