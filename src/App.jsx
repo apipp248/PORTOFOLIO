@@ -21,7 +21,7 @@ function App() {
       title: 'Profil Digital', 
       desc: 'Desain UI interaktif dengan fitur input data siswa dan sistem skor counter.', 
       img: '/Profil Digital.png',
-      url: '/dist/index.html' 
+      url: '/v-profil/index.html' 
     },
     { 
       title: 'Advanced Implementation', 
