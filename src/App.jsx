@@ -27,13 +27,13 @@ function App() {
       title: 'Advanced Implementation', 
       desc: 'Sistem E-BIZMART Fullstack (Express & EJS).', 
       img: '/Belajar 2.png',
-      url: 'https://e-bizmart-omega.vercel.app/' // Link Vercel yang baru jadi
+      url: 'https://e-bizmart-omega.vercel.app/' 
     },
     { 
       title: 'Full Project Review', 
       desc: 'Hasil akhir modul intensif.', 
-      img: '/Belajar 3.png',
-      url: '#' 
+      img: '/BIKIN UI/image/jayabaya.jpeg',
+      url: '/BIKIN UI/bikin ui.html' 
     },
     { 
       title: 'Game Development', 
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="d-flex flex-column flex-md-row" style={{ minHeight: '100vh', backgroundColor: '#023030', color: 'white', fontFamily: 'sans-serif', margin: 0 }}>
 
-      {/* Sidebar / Navbar */}
+      
       <nav className="col-12 col-md-3 col-lg-2" style={{ 
         backgroundColor: '#012626', 
         display: 'flex', 
@@ -72,7 +72,7 @@ function App() {
         </div>
       </nav>
 
-      {/* Konten Utama */}
+      
       <main className="col-12 col-md-9 col-lg-10" style={{ 
         flex: 1, 
         padding: '30px 20px', 
@@ -83,7 +83,7 @@ function App() {
         
         <div style={{ flex: 1 }}>
       
-          {/* Halaman Home */}
+          
           {halaman === 'home' && (
             <section className="d-flex flex-column justify-content-center text-center text-md-start" style={{ minHeight: '60vh' }}>
               <h1 className="fw-bold" style={{ fontSize: 'calc(1.8rem + 1.5vw)', lineHeight: '1.2' }}>
@@ -102,7 +102,7 @@ function App() {
             </section>
           )}
 
-          {/* Halaman Data */}
+        
           {halaman === 'data' && (
             <section>
               <h2 className="fw-bold" style={{ fontSize: '2rem', color: '#ccff00', marginBottom: '10px' }}>My Skills & Data</h2>
@@ -123,7 +123,7 @@ function App() {
             </section>
           )}
 
-          {/* Halaman About / Journey */}
+        
           {halaman === 'about' && (
             <section>
               <h2 className="fw-bold" style={{ fontSize: '2rem', color: '#ccff00', marginBottom: '10px' }}>My Journey</h2>
@@ -160,7 +160,7 @@ function App() {
           )}
         </div>
 
-        {/* Footer */}
+    
         <footer className="mt-5 py-4 border-top" style={{ borderColor: '#034d4d' }}>
           <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
             <p className="text-secondary mb-3 mb-md-0 small">
@@ -175,7 +175,7 @@ function App() {
 
       </main>
 
-      {/* Tambahan CSS Sederhana untuk Efek Hover */}
+      
       <style>{`
         .card-hover-effect:hover {
           transform: translateY(-10px);
